@@ -8,6 +8,11 @@ public class D {
 		d1.x = 400; 
 		System.out.println(d.x); // 10
 		System.out.println(d1.x);  //400
+		
+		D d2 = null;
+		System.out.println(d2);
+		D d3 = new D();
+		System.out.println(d3);
 	}
 	
 }
