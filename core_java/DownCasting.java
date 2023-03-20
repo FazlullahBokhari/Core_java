@@ -15,6 +15,11 @@ public class DownCasting {
 		System.out.println(b);
 		System.out.println(t);
 		
+		float y = 10.3f;
+		long w = (long)y;
+		System.out.println(w);
+		
+	
 		 
 	}
 }
