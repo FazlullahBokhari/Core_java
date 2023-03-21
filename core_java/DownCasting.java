@@ -5,21 +5,19 @@ public class DownCasting {
 		float f = 10.3f;
 		double d = f;
 		System.out.println(d);
-		
+
 		int i = 10;
-		
-		byte b = (byte)i;
-		
+
+		byte b = (byte) i;
+
 		long l = 100;
-		int t = (int)l;
+		int t = (int) l;
 		System.out.println(b);
 		System.out.println(t);
-		
+
 		float y = 10.3f;
-		long w = (long)y;
+		long w = (long) y;
 		System.out.println(w);
-		
-	
-		 
+
 	}
 }
