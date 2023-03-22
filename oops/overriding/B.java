@@ -15,6 +15,10 @@ public class B extends A {
 	public float test3(float f1) {
 		return f1;
 	}
+	@Override
+	public int test4(int u) {
+		return u;
+	}
 	public static void main(String[] args) {
 		B b = new B();
 		b.test(789100);
@@ -23,6 +27,8 @@ public class B extends A {
 		System.out.println(f);
 		float x = b.test3(800.025f);
 		System.out.println(x);
+		int r = b.test4(60000);
+		System.out.println(r);
 		
 	}
 	

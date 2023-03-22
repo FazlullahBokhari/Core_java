@@ -13,4 +13,7 @@ public class A {
 	float test3(float f) {
 		return f;
 	}
+	protected int test4(int t) {
+		return t;
+	}
 }
