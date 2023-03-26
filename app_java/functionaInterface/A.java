@@ -8,5 +8,8 @@ public class A implements I{
 	public static void main(String[] args) {
 		A a = new A();
 		a.test1();
+		a.test2();
+		int val = a.test3(500);
+		System.out.println(val);
 	}
 }
