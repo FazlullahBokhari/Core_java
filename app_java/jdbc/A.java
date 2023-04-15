@@ -7,7 +7,7 @@ public class A {
 
 	public static void main(String[] args) {
 		try {
-			
+			/*
 			Scanner input = new Scanner(System.in);
 			System.out.println("Enter the id");
 			int id = input.nextInt();
@@ -18,7 +18,7 @@ public class A {
 			System.out.println("Enter the email");
 			String email = input.next();
 			System.out.println("Enter the mobile number");
-			long mobile = input.nextLong();
+			long mobile = input.nextLong();*/
 			// connection to database
 			Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost/jdbc", "root", "1234"); 
 			
@@ -28,7 +28,12 @@ public class A {
 			
 			//st.execute("insert into employee values(007, 'Faiz','Bangalore', 'faiz@yopmail.com',987330086)");
 			
-			st.execute("insert into employee values('"+id+"', '"+name+"','"+city+"', '"+email+"','"+mobile+"')");
+			//st.execute("insert into employee values('"+id+"', '"+name+"','"+city+"', '"+email+"','"+mobile+"')");
+			
+			//st.execute(" delete from employee where empId = 9");
+			
+			st.execute("update employee set mobile=14578369 where empId=7 ");
+			
 			ResultSet result = st.executeQuery("select * from employee");
 			
 			while(result.next()) {
@@ -42,7 +47,7 @@ public class A {
 			// close database
 			conn.close();
 			
-			input.close();
+			//input.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
