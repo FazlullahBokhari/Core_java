@@ -2,29 +2,17 @@ package app_java.collection;
 
 import java.util.*;
 
-public class A {
+public class B {
 	public static void main(String[] args) {
-		ArrayList x = new ArrayList();
-		x.add(10);
-		x.add(20);
-		x.add(new Integer(40));
-		x.add("Faiz");
-		x.add(true);
-		
-		System.out.println(x);
-		
-		ArrayList<Integer> y = new ArrayList<Integer>();
-		y.add(50);
-		y.add(100);
-		y.add(200);
-		y.add(2, 500);
-		System.out.println(y);
-		
-		ArrayList<Integer> z = new ArrayList<Integer>();
+			
+		List<Integer> z = new LinkedList<Integer>();
 		z.add(1000);
-		z.addAll(0, y);
+		z.add(20);
+		z.add(30);
+		z.add(40);
+		z.add(50);
 		System.out.println(z);
-		
+		System.out.println("Ayyar size: "+z.size());
 		
 		if(z.contains(1000)) {
 			System.out.println(true);
