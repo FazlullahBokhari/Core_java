@@ -28,5 +28,17 @@ public class B {
 		while(itr.hasNext()) {
 			System.out.println("Value of z "+itr.next());
 		}
+		
+		LinkedList<Integer> x = new LinkedList<Integer>();
+		x.addFirst(100);
+		x.addFirst(200);
+		x.addFirst(300);
+		x.addFirst(400);
+		System.out.println(x);
+		x.add(500);
+		System.out.println(x);
+		x.addLast(600);
+		x.addLast(700);
+		System.out.println(x);
 	}
 }
