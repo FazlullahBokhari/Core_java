@@ -19,7 +19,6 @@ public class D {
 			for(char c: ch) {
 				System.out.println(c);
 			}
-			n
 			File f1 = new File("C:\\Users\\fazlu\\eclipse-workspace\\app_java\\src\\core_java\\file_example\\test3.txt");
 			FileReader fr1 = new FileReader(f1);
 			BufferedReader br1 = new BufferedReader(fr1);
