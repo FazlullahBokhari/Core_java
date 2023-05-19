@@ -16,7 +16,7 @@ public class C {
 			try {
 				throw new InSufficientFunds();
 			}catch (InSufficientFunds e) {
-				System.out.println(e);
+				System.out.println(e+"ggggggggggggggg");
 				System.out.println("Low balance");
 				e.printStackTrace();
 			}
